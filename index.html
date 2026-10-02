@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Política de Privacidade – SISDEF - Plus</title>
+    <style>
+        :root {
+            --fundo: #ffffff;
+            --texto: #212529;
+            --marca: #0a1f44;
+            --suave: #6c757d;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fundo: #121417;
+                --texto: #e9ecef;
+                --marca: #8fb0ff;
+                --suave: #adb5bd;
+            }
+        }
+
+        body {
+            margin: 0;
+            background: var(--fundo);
+            color: var(--texto);
+            font: 16px/1.6 system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 32px 16px 48px;
+        }
+
+        h1 {
+            color: var(--marca);
+            font-size: 1.6em;
+            line-height: 1.25;
+        }
+
+        h2 {
+            color: var(--marca);
+            font-size: 1.15em;
+            margin-top: 1.8em;
+        }
+
+        .data {
+            color: var(--suave);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Política de Privacidade<br>SISDEF - Plus</h1>
+        <p class="data">Última atualização: 02/10/2026 (versão 1.11)</p>
+
+        <p>Esta extensão para o Microsoft Edge foi desenvolvida pela GESTEC – Grupo Especial de Soluções
+            Tecnológicas e Inovação – IAGRO para uso dos servidores que operam o SISDEF
+            (<a href="https://www.sisdef.ms.gov.br/">www.sisdef.ms.gov.br</a>).</p>
+
+        <h2>O que a extensão faz</h2>
+        <p>Nas listagens de Relatórios de Diárias e de Pedidos de Diárias do SISDEF, a extensão acrescenta a
+            coluna “Ordem Bancária”, que mostra a situação da ordem bancária/liquidação do pedido de diária e a data
+            correspondente. Nas telas Solicitar e Corrigir, a coluna “Status” avisa pendências antes do envio para
+            revisão; na lista Em Revisão, mostra empenho, período e mais informações do pedido. Também exibe, no topo
+            das páginas do SISDEF, uma barra de identificação da GESTEC com um sino de avisos, e acrescenta as opções
+            25, 50 e Todos ao seletor de itens por página.</p>
+
+        <p><strong>Avisos.</strong> Com o Microsoft Edge aberto, mesmo sem uma aba do SISDEF, a extensão confere a
+            cada 10 minutos, no próprio SISDEF e com a sessão do usuário, se há pedidos de diárias liberados em
+            Solicitar/Corrigir, pedidos Em Revisão, relatórios Em Revisão com ordem bancária paga e documentos
+            pendentes de assinatura, e avisa por notificação do Windows e pelo sino. As notificações mostram apenas
+            quantidades e números de documentos, sem nomes de pessoas. Os avisos param quando o usuário sai do SISDEF
+            ou quando a sessão expira.</p>
+
+        <p>Na aba “Assinar Documento”, permite marcar vários documentos e assiná-los de uma vez no DocVirtus
+            (sistema de assinatura usado pelo SISDEF), com um único token enviado ao e-mail do usuário. O token
+            pode ser digitado na janela da extensão (“Assinar agora”) ou no próprio DocVirtus (“Abrir
+            assinatura”). A assinatura só acontece depois que o próprio usuário confirma os documentos e digita o
+            token; o token é usado apenas nesse momento e não é armazenado.</p>
+
+        <h2>Quais dados são acessados</h2>
+        <p>A extensão funciona somente nas páginas do SISDEF e somente enquanto o usuário está conectado ao sistema
+            com o próprio login. Para montar a coluna, ela consulta no próprio SISDEF, com a sessão do usuário, as
+            informações financeiras dos relatórios e pedidos exibidos na tela (número da ordem bancária, situação,
+            valor e datas). Fora da assinatura de documentos pedida e confirmada pelo próprio usuário, o acesso é
+            exclusivamente de leitura: a extensão não altera, aprova nem envia nenhum registro no SISDEF.</p>
+
+        <h2>O que fica guardado no computador do usuário</h2>
+        <ul>
+            <li><strong>Só na memória do Edge</strong> (apagado ao sair do SISDEF ou fechar o Edge; não é gravado no
+                disco): a sessão do SISDEF (token de acesso), o endereço da consulta de documentos para assinar, que
+                contém o CPF do usuário, e o resultado dos avisos, que contém nomes de beneficiários.</li>
+            <li><strong>No navegador</strong> (armazenamento local do site do SISDEF): o último resultado exibido nas
+                colunas de cada pedido, por até 1 dia, sem textos livres como o roteiro da viagem, sempre conferido de
+                novo no SISDEF; e a quantidade de itens por página escolhida.</li>
+            <li><strong>No armazenamento da extensão</strong>: apenas preferências dos avisos, o código da unidade do
+                usuário no SISDEF e identificadores numéricos dos itens já avisados.</li>
+        </ul>
+        <p>Nada disso sai do computador do usuário.</p>
+
+        <h2>O que a extensão não faz</h2>
+        <ul>
+            <li>Não coleta dados nem guarda histórico além do descrito acima.</li>
+            <li>Não envia dados para servidores da GESTEC, do IAGRO ou de terceiros. Toda comunicação ocorre apenas
+                entre o navegador do usuário, o SISDEF e o DocVirtus (assinatura de documentos).</li>
+            <li>Não guarda senhas. A autenticação é a mesma que o usuário já possui no SISDEF; a sessão fica só na
+                memória, como descrito acima.</li>
+            <li>Não usa cookies próprios, ferramentas de análise, publicidade ou rastreamento.</li>
+            <li>Não guarda o token de assinatura: ele é usado somente no momento em que o usuário assina.</li>
+            <li>Não funciona em nenhum outro site além do SISDEF; o token de assinatura só é enviado ao DocVirtus
+                (docvirtus.ms.gov.br).</li>
+        </ul>
+
+        <h2>Compartilhamento</h2>
+        <p>Nenhum dado é vendido, cedido ou compartilhado com terceiros.</p>
+
+        <h2>Alterações desta política</h2>
+        <p>Qualquer mudança nesta política será publicada nesta página, com a data de atualização.</p>
+
+        <h2>Contato</h2>
+        <p>GESTEC – Grupo Especial de Soluções Tecnológicas e Inovação – IAGRO<br>
+            E-mail: <strong>gestec@iagro.ms.gov.br</strong></p>
+    </main>
+</body>
+
+</html>
